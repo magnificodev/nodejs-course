@@ -1,0 +1,37 @@
+<%- include("./includes/head.ejs") %>
+        <link rel="stylesheet" href="/css/shop.css">
+    </head>
+    <body>
+        <%- include("./includes/navigation.ejs") %>
+        <main>
+            <% if (prods.length > 0) { %>
+            <div class="grid">
+                <% for (let prod of prods) { %>
+                <article class="card product-item">
+                    <header class="card__header">
+                        <h1 class="product__title"><%= prod.title %></h1>
+                    </header>
+                    <div class="card__image">
+                        <img
+                            src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg"
+                            alt="A Book"
+                        />
+                    </div>
+                    <div class="card__content">
+                        <h2 class="product__price">$20.00</h2>
+                        <p class="product__description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <div class="card__actions">
+                        <button class="btn">Add Product</button>
+                    </div>
+                </article>
+                <% } %>
+            </div>
+            <% } else { %>
+            <h1>No Products</h1>
+            <% } %>
+        </main>
+<%- include("./includes/end.ejs") %>
