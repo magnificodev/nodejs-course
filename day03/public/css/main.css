@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 0 3.2rem;
+    height: 6rem;
+    background-color: lightcoral;
+}
+
+.header__nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 1.6rem;
+    list-style: none;
+}
+
+.nav__item a {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav__item a:hover,
+.nav__item a.active {
+    color: blue;
+}

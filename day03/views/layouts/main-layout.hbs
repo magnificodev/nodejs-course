@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{pageTitle}}</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        {{#if indexCSS}}
+            <link rel="stylesheet" href="/css/form.css" />
+        {{/if}}
+        {{#if usersCSS}}
+            <link rel="stylesheet" href="/css/users.css" />
+        {{/if}}
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/users" class={{#if activeUsers}}"active"{{/if}}>Users</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/" class={{#if activeAddUser}}"active"{{/if}}>Enter Users</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        {{{body}}}
+    </body>
+</html>

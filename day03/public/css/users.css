@@ -1,0 +1,12 @@
+.users {
+    margin-left: 3.2rem;
+}
+
+.user-list {
+    list-style-type: disc;
+    padding-left: 3.2rem;
+}
+
+.user-item {
+    font-size: 1.6rem;
+}

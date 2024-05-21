@@ -1,0 +1,42 @@
+form {
+    width: 30rem;
+    max-width: 80%;
+    margin: 3.2rem auto;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form label {
+    color: lightcoral;
+    font-size: 1.8rem;
+}
+
+.user-form input {
+    padding: 0.8rem 1.6rem;
+    margin-top: 0.8rem;
+    outline: none;
+    border: 1px solid lightcoral;
+    border-radius: 0.6rem;
+    color: lightcoral;
+    font-size: 1.8rem;
+}
+
+.user-form input::placeholder {
+    color: lightpink;
+    font-size: 1.6rem;
+}
+
+button {
+    padding: 0.8rem 1.6rem;
+    margin-top: 1.6rem;
+    outline: none;
+    border: none;
+    background-color: lightcoral;
+    font-size: 1.6rem;
+    color: #fff;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
